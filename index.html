@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SHREE SHYAM AMBULANCE SERVICE</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff5f5;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 50px;
+
+    background:linear-gradient(to right,#7a0000,#ff1e1e);
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.25);
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#ffd6d6;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(90,0,0,0.75),rgba(90,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1587745416684-47953f16f02f?q=80&w=1400&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:75px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:25px;
+    margin-bottom:35px;
+}
+
+.call-box{
+    background:white;
+    color:#c40000;
+
+    padding:22px 40px;
+
+    border-radius:20px;
+
+    display:inline-block;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+
+    animation:pulse 1.5s infinite;
+}
+
+.call-box h2{
+    font-size:22px;
+}
+
+.call-box h1{
+    font-size:48px;
+    margin-top:10px;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* SERVICES */
+
+.section-title{
+    text-align:center;
+    color:#a00000;
+    font-size:48px;
+    margin-top:60px;
+}
+
+.services{
+    width:90%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    padding:60px 0;
+}
+
+.card{
+    background:white;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.12);
+
+    border-top:6px solid red;
+
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+}
+
+.card h2{
+    color:#c40000;
+    margin-top:15px;
+}
+
+.card p{
+    margin-top:15px;
+    color:#444;
+    font-size:17px;
+}
+
+/* FEATURES */
+
+.features{
+    width:90%;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+    padding:50px 0;
+}
+
+.feature{
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.feature h2{
+    color:#b00000;
+}
+
+.feature p{
+    margin-top:10px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#ffdede;
+
+    text-align:center;
+
+    padding:80px 20px;
+}
+
+.contact h1{
+    color:#a00000;
+    font-size:50px;
+}
+
+.contact p{
+    margin-top:20px;
+    font-size:22px;
+}
+
+.contact-number{
+    margin-top:25px;
+    font-size:55px;
+    font-weight:bold;
+    color:#d10000;
+}
+
+.whatsapp-btn{
+    display:inline-block;
+
+    margin-top:30px;
+
+    background:#25D366;
+    color:white;
+
+    padding:16px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+footer{
+    background:#730000;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    nav{
+        padding:15px 20px;
+    }
+
+    .logo{
+        font-size:20px;
+    }
+
+    .nav-links a{
+        font-size:14px;
+        margin-left:10px;
+    }
+
+    .hero-content h1{
+        font-size:42px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    .call-box h1{
+        font-size:32px;
+    }
+
+    .contact-number{
+        font-size:35px;
+    }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        🚑 SHREE SHYAM AMBULANCE SERVICE
+    </div>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>24/7 Emergency Ambulance Service</h1>
+
+        <p>
+            ICU Ambulance • Oxygen Support • Emergency Response
+        </p>
+
+        <div class="call-box">
+
+            <h2>📞 Emergency Helpline</h2>
+
+            <h1>9372702982</h1>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<h1 class="section-title" id="services">
+    Our Ambulance Services
+</h1>
+
+<section class="services">
+
+    <div class="card">
+        <h2>🚑 Emergency Ambulance</h2>
+
+        <p>
+            Fast ambulance support for emergency situations.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>❤️ ICU Ambulance</h2>
+
+        <p>
+            ICU setup with oxygen and medical equipment.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>🏥 Hospital Transfer</h2>
+
+        <p>
+            Safe transport between hospitals and cities.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>👨‍⚕️ Medical Team</h2>
+
+        <p>
+            Experienced drivers and medical staff available.
+        </p>
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+
+<h1 class="section-title">
+    Why Choose Us
+</h1>
+
+<section class="features">
+
+    <div class="feature">
+        <h2>⚡ Fast Response</h2>
+        <p>Quick ambulance dispatch anytime.</p>
+    </div>
+
+    <div class="feature">
+        <h2>📍 GPS Tracking</h2>
+        <p>Track ambulance location easily.</p>
+    </div>
+
+    <div class="feature">
+        <h2>🛡️ Safe Transport</h2>
+        <p>Comfortable and secure patient transfer.</p>
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+    <h1>Contact Emergency Service</h1>
+
+    <p>
+        Available 24 Hours Everyday
+    </p>
+
+    <div class="contact-number">
+        📞 9372702982
+    </div>
+
+    <a class="whatsapp-btn" href="https://wa.me/919372702982">
+        WhatsApp Now
+    </a>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h2>🚑 SHREE SHYAM AMBULANCE SERVICE</h2>
+
+    <p style="margin-top:10px;">
+        Saving Lives Every Second ❤️
+    </p>
+
+</footer>
+
+</body>
+</html>
